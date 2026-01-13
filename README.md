@@ -18,7 +18,7 @@ The result is a static C library that can be reused in future projects.
 
 A **Makefile** is provided to compile the library. Its main features are:
 
-- Compilation using `gcc` with the flags `-Wall -Wextra -Werror`.
+- Compilation using `cc` with the flags `-Wall -Wextra -Werror`.
 - Uses the variable **AR = ar rcs** to create the static library.
 - Uses the variable **RM = rm -f** to remove generated files.
 - Implements the standard rules: `all`, `clean`, `fclean`, and `re`.
@@ -43,7 +43,7 @@ To use libft in your own project:
 ````
 2. Compile your .c files while linking the static library:
 ````
-gcc -Wall -Wextra -Werror *.c -L. -lft
+cc -Wall -Wextra -Werror *.c -L. -lft
 ````
 
 ## Resources

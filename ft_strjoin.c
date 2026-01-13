@@ -6,7 +6,7 @@
 /*   By: jbarreir <jbarreir@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 19:17:56 by jbarreir          #+#    #+#             */
-/*   Updated: 2026/01/07 09:27:44 by jbarreir         ###   ########.fr       */
+/*   Updated: 2026/01/13 07:39:14 by jbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	new = malloc(len1 + len2 + 1);
 	if (!new)
 		return (NULL);
-	new = ft_memcpy(new, s1, len1);
-	new = ft_memcpy(new + len1, s2, len2);
+	ft_memcpy(new, s1, len1);
+	ft_memcpy(new + len1, s2, len2);
 	new[len1 + len2] = '\0';
 	return (new);
 }
