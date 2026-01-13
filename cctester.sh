@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-cc -Wall -Wextra -Werror -g tester.c -L. -lft -o tester
+cc -Wall -Wextra -Werror -g tester.c -L. -lft -lbsd -o tester
