@@ -6,7 +6,7 @@
 /*   By: jbarreir <jbarreir@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 18:48:18 by jbarreir          #+#    #+#             */
-/*   Updated: 2026/01/07 09:41:00 by jbarreir         ###   ########.fr       */
+/*   Updated: 2026/01/13 20:13:01 by jbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	size_t		s_len;
 	char		*sub;
 
-	if (!s || len == 0)
+	if (!s)
 		return (NULL);
 	s_len = 0;
 	while (s[s_len])
@@ -32,7 +32,7 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	if (!sub)
 		return (NULL);
 	i = 0;
-	while (s[start] && i < len)
+	while (i < len)
 	{
 		sub[i] = s[start + i];
 		i++;

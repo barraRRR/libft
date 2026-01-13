@@ -6,7 +6,7 @@
 /*   By: jbarreir <jbarreir@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 21:11:28 by jbarreir          #+#    #+#             */
-/*   Updated: 2026/01/07 09:55:40 by jbarreir         ###   ########.fr       */
+/*   Updated: 2026/01/13 20:15:33 by jbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,15 +45,10 @@ static size_t	last_chunk(char const *s, char const *set, size_t len)
 	size_t		total;
 
 	total = 0;
-	while ((len - 1) >= 0 && s[len - 1])
+	while (len > 0 && is_set(s[len - 1], set))
 	{
-		if (is_set(s[len - 1], set))
-		{
-			len--;
-			total++;
-		}
-		else
-			break ;
+		len--;
+		total++;
 	}
 	return (total);
 }
@@ -78,7 +73,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	if (!new)
 		return (NULL);
 	if (new_size > 0)
-		new = ft_memcpy(new, s1 + first, new_size);
+		ft_memcpy(new, s1 + first, new_size);
 	new[new_size] = '\0';
 	return (new);
 }
