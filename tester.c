@@ -114,15 +114,22 @@ int	main(void)
 	printf("\n--- STR TEST ---\n");
 	printf("strlen: %zu | %zu\n", strlen("hola"), ft_strlen("hola"));
 
-	char dst1[20];
-	char dst2[20];
+	char dst1[20] = "hola";
+	char dst2[20] = "mundo";
+    char dst3[20] = "hola";
+	char dst4[20] = "mundo";
+
 	printf("strlcpy: %zu | %zu\n",
 		strlcpy(dst1, "hola", 20),
-		ft_strlcpy(dst2, "hola", 20));
+		ft_strlcpy(dst3, "hola", 20));
+
+	printf("strlcat: %zu | %zu\n",
+		strlcat(dst2, "hola", 10),
+		ft_strlcat(dst4, "hola", 10));
 
 	printf("strncmp: %d | %d\n",
-		strncmp("abc", "abd", 2),
-		ft_strncmp("abc", "abd", 2));
+		strncmp("abc", "abc", 2),
+		ft_strncmp("abc", "abc", 2));
 
 	printf("strchr: %p | %p\n",
 		strchr("banana", 'n'),
