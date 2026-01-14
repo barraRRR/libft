@@ -6,13 +6,15 @@
 /*   By: jbarreir <jbarreir@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 18:09:17 by jbarreir          #+#    #+#             */
-/*   Updated: 2026/01/12 18:41:14 by jbarreir         ###   ########.fr       */
+/*   Updated: 2026/01/14 12:29:47 by jbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
+// The calloc() function allocates memory for an array of nmemb elements of
+// size bytes each and returns a pointer to the allocated memory.
+// The memory is set to zero.
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	size_t			total;

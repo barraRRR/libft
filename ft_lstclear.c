@@ -6,12 +6,11 @@
 /*   By: jbarreir <jbarreir@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/05 12:31:30 by jbarreir          #+#    #+#             */
-/*   Updated: 2026/01/07 09:24:00 by jbarreir         ###   ########.fr       */
+/*   Updated: 2026/01/14 12:30:32 by jbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {

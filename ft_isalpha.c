@@ -6,7 +6,7 @@
 /*   By: jbarreir <jbarreir@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 12:07:01 by jbarreir          #+#    #+#             */
-/*   Updated: 2026/01/07 09:38:25 by jbarreir         ###   ########.fr       */
+/*   Updated: 2026/01/14 11:40:30 by jbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 int	ft_isalpha(int c)
 {
-	if (c < 0 || c > 255)
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+		return (1);
+	else
 		return (0);
-	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
 }

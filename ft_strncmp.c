@@ -6,12 +6,11 @@
 /*   By: jbarreir <jbarreir@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/11 13:41:40 by jbarreir          #+#    #+#             */
-/*   Updated: 2026/01/13 20:09:46 by jbarreir         ###   ########.fr       */
+/*   Updated: 2026/01/14 12:33:23 by jbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stddef.h>
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

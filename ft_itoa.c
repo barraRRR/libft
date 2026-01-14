@@ -6,13 +6,11 @@
 /*   By: jbarreir <jbarreir@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/30 14:08:44 by jbarreir          #+#    #+#             */
-/*   Updated: 2026/01/07 09:48:35 by jbarreir         ###   ########.fr       */
+/*   Updated: 2026/01/14 12:30:26 by jbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
-#include <stddef.h>
 
 static int	count_digits(long l, size_t digits)
 {

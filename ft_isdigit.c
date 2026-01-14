@@ -6,7 +6,7 @@
 /*   By: jbarreir <jbarreir@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 12:13:08 by jbarreir          #+#    #+#             */
-/*   Updated: 2026/01/13 13:11:44 by jbarreir         ###   ########.fr       */
+/*   Updated: 2026/01/14 11:40:08 by jbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 int	ft_isdigit(int c)
 {
-	if (c < 0 || c > 255)
+	if (c >= '0' && c <= '9')
+		return (1);
+	else
 		return (0);
-	return (c >= '0' && c <= '9');
 }

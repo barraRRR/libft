@@ -6,7 +6,7 @@
 /*   By: jbarreir <jbarreir@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/13 12:54:03 by jbarreir          #+#    #+#             */
-/*   Updated: 2026/01/13 13:23:25 by jbarreir         ###   ########.fr       */
+/*   Updated: 2026/01/14 16:08:28 by jbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ int	ft_atoi(const char *str)
 	int				result;
 	int				sign;
 
-	if (!str)
-		return (0);
 	i = 0;
 	sign = 1;
 	result = 0;

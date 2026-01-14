@@ -6,7 +6,7 @@
 /*   By: jbarreir <jbarreir@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 14:33:55 by jbarreir          #+#    #+#             */
-/*   Updated: 2026/01/07 09:28:59 by jbarreir         ###   ########.fr       */
+/*   Updated: 2026/01/14 11:40:22 by jbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 int	ft_isprint(int c)
 {
-	if (c < 0 || c > 255)
+	if (c >= 32 && c <= 126)
+		return (1);
+	else
 		return (0);
-	return (c >= 32 && c <= 126);
 }
