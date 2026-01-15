@@ -6,7 +6,7 @@
 /*   By: jbarreir <jbarreir@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 18:10:13 by jbarreir          #+#    #+#             */
-/*   Updated: 2026/01/07 09:17:07 by jbarreir         ###   ########.fr       */
+/*   Updated: 2026/01/14 17:25:15 by jbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
+	t_list		*tmp;
+
 	if (!lst || !new)
 		return ;
 	if (!*lst)
@@ -21,7 +23,8 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		*lst = new;
 		return ;
 	}
-	while ((*lst)->next)
-		*lst = (*lst)->next;
-	(*lst)->next = new;
+	tmp = *lst;
+	while (tmp->next)
+		tmp = tmp->next;
+	tmp->next = new;
 }
