@@ -1,10 +1,10 @@
-# libft
-
 _This project was developed as part of the 42 curriculum by jbarreir._
 
-## Description
+# libft
 
-In this project, we recreate a subset of functions from the standard C library (**libc**) as an exercise to better understand their behavior and internal implementation.
+Recreating a subset of functions from the standard C library (**libc**) as an exercise to better understand their behavior and internal implementation.
+
+## Description
 
 The project is divided into three parts:
 
